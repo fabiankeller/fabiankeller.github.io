@@ -145,6 +145,28 @@ p {
     text-decoration: none;
 }
 
+.affix-top {
+    background-color: none;
+}
+
+.affix-bottom{
+    background-color: #ffff00;
+}
+
+.affix {
+    background-color: #ffffff;
+}
+
+#footer{
+    background: #f5f5f5;
+    line-height: 45px;
+    color: #467FC9;
+}
+
+#footer p {
+    font-size: 13px;
+}
+
 #mypicture {
     width: 30%;
     height: auto;
