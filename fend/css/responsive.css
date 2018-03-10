@@ -1,0 +1,33 @@
+@media screen and (min-width: 550px) {
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: right;
+  }
+
+  .header__picture {
+    margin: 1em auto;
+    order: 0;
+    width: 25%;
+  }
+
+  .header__picture > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .header__titles {
+    margin: 1em auto;
+    order: 1;
+    width: 75%;
+  }
+
+  .header__title, .header__subtitle {
+    width: 100%;
+  }
+
+   .front__end__cloud > img {
+      width: 100%;
+      display: flex;
+   }
+}
