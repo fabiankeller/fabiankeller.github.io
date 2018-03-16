@@ -2,32 +2,62 @@
   header {
     display: flex;
     flex-wrap: wrap;
-    text-align: right;
   }
 
   .header__picture {
-    margin: 1em auto;
+    margin-top: 1em;
+    margin-left: 1.5em;
     order: 0;
     width: 25%;
   }
 
   .header__picture > img {
-    width: 100%;
-    height: 100%;
+    width: 150px;
+    height: 150px;
   }
 
   .header__titles {
-    margin: 1em auto;
+    text-align: right;
+    margin-top: 2em;
+    margin-right: 1.5em;
     order: 1;
-    width: 75%;
+    width: calc(75% - 3em);
   }
 
   .header__title, .header__subtitle {
     width: 100%;
   }
 
+  spacer {
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid #7d97ad;
+    order: 2;
+  }
+
    .front__end__cloud > img {
-      width: 100%;
-      display: flex;
+      width: 60%;
+      margin: 2em auto;
+      display: block;
    }
+}
+
+@media screen and (min-width: 650px) {
+  .featured__work {
+    widows: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .featured__work__card {
+    width: calc(50% - 2em);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
