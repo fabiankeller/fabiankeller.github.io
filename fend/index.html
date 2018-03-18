@@ -4,57 +4,65 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fabian Keller's portfolio site</title>
+    <title>Portfolio site of Fabian Keller</title>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
   </head>
   <body>
     <header>
-      <div class="header__picture">
+      <div class="header-picture">
         <img src="resources/fabian.png" alt="Fabian Keller profile picture"/>
       </div>
-      <div class="header__titles">
-          <h1 class="header__title">Fabian Keller</h1>
-          <h3 class="header__subtitle">Front-End Engineer</h3>
+      <div class="header-titles">
+          <h1 class="header-title">Fabian Keller</h1>
+          <h3 class="header-subtitle">Front-End Engineer</h3>
       </div>
       <spacer/>
     </header>
     <main>
-      <div class="front__end__cloud">
-        <img src="resources/js-css-html.png"/>
-      </div>
-      <div>
-        <h3 class="profile__description__greeting">
-          Hi, I'm Fabian!
-        </h3>
-        <p class="profile__description">
+      <img class="image-cloud" src="resources/frontend-cloud.png"/>
+      <div class="intro">
+        <h2 class="intro-greeting">Hi, I'm Fabian!</h2>
+        <p>
           I'm a software engineer with
           a passion for front-end technologies.<br />
           I create web applications using Angular,
           React, HTML5, CSS3 and Javascript.
         </p>
       </div>
-      <div class="featured__work">
-        <h2 class="featured__work__header">My projects</h2>
-        <div class="featured__work__card">
-          <div class=featured__work__card__image>
-            <img src="resources/front-end-cloud.png"/>
-          </div>
-          <h3>APPIFY</h3>
+      <div class="projects">
+        <h2 class="projects-title">My projects</h2>
+        <div class="project-card">
+          <img class=project-card-image src="resources/project.png"/>
+          <h3>Classic Arcade Game Clone</h3>
           <p>
-            This is a project that I did for the Udacity Front-End Developer
-            Nanodegree.
+            You will be provided with visual assets and a game loop engine;
+            using these tools you must add a number of entities to the game
+            including the player characters and enemies to recreate the classic
+            arcade game Frogger.
           </p>
         </div>
-        <div  class="featured__work__card">
-          <div class=featured__work__card__image>
-            <img src="resources/front-end-cloud.png"/>
-          </div>
-          <h3>APPIFY</h3>
+        <div class="project-card">
+          <img class=project-card-image src="resources/project.png"/>
+          <h3>Feed Reader Testing</h3>
           <p>
-            This is a project that I did for the Udacity Front-End Developer
-            Nanodegree.
+            In this project, you will learn about testing with JavaScript.
+            Many organizations practice a standard known as "test-driven
+            development" or TDD, in which developers write tests first, before
+            developing their application. You'll use TDD to add new features
+            to a Feed Reader application.
+          </p>
+        </div>
+        <div class="project-card">
+          <img class=project-card-image src="resources/project.png"/>
+          <h3>Restaurant Reviews</h3>
+          <p>
+            In this project, you’ll build a Restaurant Reviews App that meets
+            accessibility standards and provides a responsive user experience.
+            You will take a static design that lacks accessibility, and convert
+            the design to be responsive on different sized displays and
+            accessible for screen reader use.
           </p>
         </div>
       </div>
