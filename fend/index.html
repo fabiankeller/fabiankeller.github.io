@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <title>Portfolio site of Fabian Keller</title>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
   </head>
@@ -17,22 +19,38 @@
       <div class="header-titles">
           <h1 class="header-title">Fabian Keller</h1>
           <h3 class="header-subtitle">Front-End Engineer</h3>
+          <div class="social-media">
+            <a href="https://github.com/fabiankeller" target="_blank">
+              <i class="fa fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/fabian-keller-13825264/" target="_blank">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://www.xing.com/profile/Fabian_Keller25" target="_blank">
+              <i class="fa fa-xing"></i>
+            </a>
+            <a href="https://twitter.com/fabian_keller" target="_blank">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a href="https://www.facebook.com/fabian.keller.526" target="_blank">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </div>
       </div>
-      <spacer/>
     </header>
     <main>
-      <img class="image-cloud" src="resources/frontend-cloud.png"/>
-      <div class="intro">
-        <h2 class="intro-greeting">Hi, I'm Fabian!</h2>
-        <p>
-          I'm a software engineer with
-          a passion for front-end technologies.<br />
-          I create web applications using Angular,
-          React, HTML5, CSS3 and Javascript.
-        </p>
-      </div>
-      <div class="projects">
-        <h2 class="projects-title">My projects</h2>
+      <section class="banner">
+        <div class=banner-text>
+          <h2 class="banner-greeting">Hi, I'm Fabian!</h2>
+          <h2 class="banner-intro">
+            Software engineer with a passion for Front-End technologies!
+          </h2>
+        </div>
+      </section>
+      <section class="projects">
+        <div class="section-title">
+          <h2>My Featured Work</h2>
+        </div>
         <div class="project-card">
           <img class=project-card-image src="resources/project.png"/>
           <h3>Classic Arcade Game Clone</h3>
@@ -65,7 +83,7 @@
             accessible for screen reader use.
           </p>
         </div>
-      </div>
+      </section>
     </main>
   </body>
 </html>

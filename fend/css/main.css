@@ -1,9 +1,15 @@
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6em;
   color: #2d3c49;
   text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin: 1em 1em;
 }
 
 /*
@@ -16,26 +22,38 @@ h3 {
 
 .header-picture {
   width: 50%;
-  margin: 2em auto;
+  margin: 1em auto 0 auto;
 }
 
 .header-picture > img {
   width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .header-title {
   font-size: 2.5em;
-  font-weight: 300;
-  color: #7d97ad;
+  font-weight: 400;
+  color: #11B4E4;
+  margin: 0.6em 0 0.4em 0;
 }
 
 .header-subtitle {
   font-size: 1.3em;
 }
 
-spacer {
-  display: block;
-  border-top: 1px solid #7d97ad;
+.social-media > a {
+  text-decoration: none;
+}
+
+.social-media > a > i {
+  font-size: 1.5em;
+  color: #7d8185;
+  margin: 0 0.2em;
+}
+
+.social-media {
+  margin-bottom: 0.7em;
 }
 
 /*
@@ -46,19 +64,49 @@ spacer {
    width: 100%;
  }
 
-.image-cloud {
-  display: none;
+.banner {
+  position: relative;
+  background: url('../resources/macbook2.jpg') center 60% no-repeat;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.7;
+  background-size: cover;
+  height: 320px;
+  margin: 0;
 }
 
-.intro {
-  font-size: 1.1em;
-  line-height: 2em;
-  margin: 0.5em 0.5em;
+.banner-text > h2 {
+  margin: 1em 1em;
+  position: absolute;
+  width: calc(100% - 2em);
+  text-align: center;
+  color: #fff;
+  line-height: 1.5em;
+  font-weight: 400;
 }
 
-.intro-greeting {
+.banner-greeting {
+  top: 5%;
   font-size: 2em;
-  font-weight: 300;
+  font-weight: 400;
+}
+
+.banner-intro {
+  top: 25%;
+}
+
+.section-title {
+ width: 100%;
+}
+
+.section-title > h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #11B4E4;
+  padding-bottom: 0.4em;
+  margin-bottom: 0;
+  display: inline-block;
+  border-bottom: 2px solid #11B4E4;
 }
 
 /*
@@ -66,20 +114,11 @@ spacer {
  */
 
 .projects {
-  margin-top: 3em;
-  text-align: left;
-}
-
-.projects-title {
-  width: 100%;
-  font-size: 1.8em;
-  font-weight: 400;
-  color: #7d97ad;
-  margin-left: 0.5em;
+  margin-top: 2em;
 }
 
 .project-card {
-  margin: 2em 2em;
+  margin: 1.5em 1.5em;
 }
 
 .project-card-image {
@@ -88,5 +127,9 @@ spacer {
 
 .project-card > h3 {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.3em;
+}
+
+.project-card > p {
+  text-align: left;
 }

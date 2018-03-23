@@ -1,4 +1,8 @@
 @media screen and (min-width: 550px) {
+  body {
+    font-size: 16px;
+  }
+
   header {
     display: flex;
     flex-wrap: wrap;
@@ -12,52 +16,75 @@
   }
 
   .header-picture > img {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
   }
 
   .header-titles {
-    margin: 2em 1.5em;
+    margin: 3em 1.5em 1em 1.5em;
     order: 1;
     width: calc(75% - 3em);
   }
 
-  .header-title, .header-subtitle {
+  .header-title, .header-subtitle, .social-media {
     width: 100%;
     text-align: right;
   }
 
-  spacer {
-    width: 100%;
-    height: 1px;
-    border-top: 1px solid #7d97ad;
-    order: 2;
+  .section-title > h2 {
+    font-size: 1.8em;
+    text-align: left;
   }
 }
 
 @media screen and (min-width: 650px) {
-  .image-cloud {
-     width: 80%;
-     margin: 1em auto;
-     display: block;
-  }
-
   .projects {
-    widows: 100%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+
+  section {
+    margin: 0;
+  }
+
+  .section-title > h2 {
+    margin-bottom: 0.6em;
   }
 
   .project-card {
-    margin: 2em 3em;
-    width: calc(50% - 6em);
+    margin: 1em 2em;
+    width: calc(50% - 4em);
   }
 }
 
 @media screen and (min-width: 1100px) {
-  body {
-    width: 1100px;
+
+
+  .banner {
+    background: url('../resources/macbook2.jpg') 50% 75% no-repeat;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    background-size: cover;
+    height: 400px;
+    width: 100%
+  }
+
+  .banner-intro {
+    top: 20%;
+  }
+
+  .project-card {
+    margin: 1em 2em;
+    width: calc(33.33% - 4em);
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  header, .projects {
     margin-left: auto;
     margin-right: auto;
+    width: 1400px;
   }
 }
