@@ -10,7 +10,6 @@
 
   .header-picture {
     margin: 1em 1.5em;
-    order: 0;
     width: calc(25% - 3em);
     text-align: left;
   }
@@ -21,8 +20,7 @@
   }
 
   .header-titles {
-    margin: 3em 1.5em 1em 1.5em;
-    order: 1;
+    margin: 1.5em;
     width: calc(75% - 3em);
   }
 
@@ -33,37 +31,25 @@
 
   .section-title > h2 {
     font-size: 1.8em;
-    text-align: left;
   }
 
   .skill {
-    width: calc(33.33% - 2em);
+    width: 33.33%;
   }
 }
 
 @media screen and (min-width: 650px) {
-  .projects {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-  }
-
-  section {
-    margin: 0;
-  }
-
-  .section-title > h2 {
-    margin-bottom: 0.6em;
-  }
-
   .project-card {
-    margin: 1em 2em;
     width: calc(50% - 4em);
   }
 
-  .skill {
-    width: calc(25% - 2em);
+  .skill > svg {
+    width: 180px;
+    height: 180px;
+  }
+
+  .skill-donut-ring, .skill-donut-segment {
+    stroke-width: 2;
   }
 
   .section-title::after {
@@ -72,15 +58,9 @@
 }
 
 @media screen and (min-width: 1100px) {
-
-
-  .banner {
-    background: url('../resources/macbook.jpg') 50% 75% no-repeat;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    background-size: cover;
+  .banner-background {
+    background-position: 50% 75%;
     height: 400px;
-    width: 100%
   }
 
   .banner-intro {
@@ -88,12 +68,11 @@
   }
 
   .project-card {
-    margin: 1em 2em;
     width: calc(33.33% - 4em);
   }
 
   .skill {
-    width: calc(16.66% - 2em);
+    width: 20%;
   }
 }
 

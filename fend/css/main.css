@@ -9,7 +9,13 @@ body {
 }
 
 section {
-  margin: 1em 1em;
+  margin: 1em 0;
+}
+
+.skills, .projects {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /*
@@ -52,10 +58,6 @@ h3 {
   margin: 0 0.2em;
 }
 
-.social-media {
-  margin-bottom: 0.7em;
-}
-
 /*
  * Main specific stylings
  */
@@ -66,21 +68,23 @@ h3 {
 
 .banner {
   position: relative;
+}
+
+.banner-background {
+  height: 320px;
   background: url('../resources/macbook.jpg') center 60% no-repeat;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   opacity: 0.8;
   background-size: cover;
-  height: 320px;
-  margin: 0;
 }
 
 .banner-text > h2 {
   margin: 1em 1em;
   position: absolute;
   width: calc(100% - 2em);
-  text-align: center;
   color: #fff;
+  filter: none;
   line-height: 1.5em;
   font-weight: 400;
 }
@@ -88,7 +92,6 @@ h3 {
 .banner-greeting {
   top: 5%;
   font-size: 2em;
-  font-weight: 400;
 }
 
 .banner-intro {
@@ -101,16 +104,15 @@ h3 {
 
 .section-title > h2 {
   font-size: 1.5em;
-  font-weight: 400;
   color: #11B4E4;
-  display: inline-block;
 }
 
 .section-title::after {
   content: "";
   width: 30%;
+  height: 1px;
   display: block;
-  margin: 0.1em auto 2em auto;
+  margin: 0 auto;
   border-bottom: 1px solid #11B4E4;
 }
 
@@ -118,15 +120,9 @@ h3 {
  * Skills specific stylings
  */
 
-.skills {
-  width: calc(100% - 2em);
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .skill {
-  margin: 1em 1em;
-  width: 40%;
+  margin: 1em 0;
+  width: 50%;
 }
 
 .skill > svg {
@@ -137,7 +133,7 @@ h3 {
 .skill-donut-circle {
   cx: 21;
   cy: 21;
-  r: 16;
+  r: 15.91549430918954;
 }
 
 .skill-donut-hole {
@@ -146,16 +142,16 @@ h3 {
 
 .skill-donut-ring {
   fill: transparent;
-  stroke-opacity: 0.6;
+  stroke-opacity: 0.5;
   stroke: #d2d3d4;
-  stroke-width: 3
+  stroke-width: 2.5;
 }
 
 .skill-donut-segment {
   fill: transparent;
-  stroke-opacity: 0.8;
+  stroke-opacity: 0.7;
   stroke: #11B4E4;
-  stroke-width: 3;
+  stroke-width: 2.5;
   stroke-dashoffset: 25;
 }
 
@@ -164,8 +160,6 @@ h3 {
   font-weight: bold;
   text-transform: uppercase;
   text-anchor: middle;
-  -moz-transform: translateY(0.5em);
-  -ms-transform: translateY(0.5em);
   -webkit-transform: translateY(0.5em);
   transform: translateY(0.5em);
 }
@@ -174,12 +168,9 @@ h3 {
  * Projects specific stylings
  */
 
-.projects {
-  margin-top: 2em;
-}
-
 .project-card {
-  margin: 1.5em 1.5em;
+  width: 100%;
+  margin: 2em 2em;
 }
 
 .project-card-image {
