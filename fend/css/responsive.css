@@ -75,7 +75,7 @@
 
 
   .banner {
-    background: url('../resources/macbook2.jpg') 50% 75% no-repeat;
+    background: url('../resources/macbook.jpg') 50% 75% no-repeat;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     background-size: cover;

@@ -66,7 +66,7 @@ h3 {
 
 .banner {
   position: relative;
-  background: url('../resources/macbook2.jpg') center 60% no-repeat;
+  background: url('../resources/macbook.jpg') center 60% no-repeat;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   opacity: 0.8;
