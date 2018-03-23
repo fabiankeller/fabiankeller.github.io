@@ -47,7 +47,7 @@ h3 {
 }
 
 .social-media > a > i {
-  font-size: 1.5em;
+  font-size: 1.7em;
   color: #7d8185;
   margin: 0 0.2em;
 }
@@ -69,7 +69,7 @@ h3 {
   background: url('../resources/macbook2.jpg') center 60% no-repeat;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  opacity: 0.7;
+  opacity: 0.8;
   background-size: cover;
   height: 320px;
   margin: 0;
@@ -103,10 +103,71 @@ h3 {
   font-size: 1.5em;
   font-weight: 400;
   color: #11B4E4;
-  padding-bottom: 0.4em;
-  margin-bottom: 0;
   display: inline-block;
-  border-bottom: 2px solid #11B4E4;
+}
+
+.section-title::after {
+  content: "";
+  width: 30%;
+  display: block;
+  margin: 0.1em auto 2em auto;
+  border-bottom: 1px solid #11B4E4;
+}
+
+/*
+ * Skills specific stylings
+ */
+
+.skills {
+  width: calc(100% - 2em);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill {
+  margin: 1em 1em;
+  width: 40%;
+}
+
+.skill > svg {
+  width: 150px;
+  height: 150px;
+}
+
+.skill-donut-circle {
+  cx: 21;
+  cy: 21;
+  r: 16;
+}
+
+.skill-donut-hole {
+  fill: #fff;
+}
+
+.skill-donut-ring {
+  fill: transparent;
+  stroke-opacity: 0.6;
+  stroke: #d2d3d4;
+  stroke-width: 3
+}
+
+.skill-donut-segment {
+  fill: transparent;
+  stroke-opacity: 0.8;
+  stroke: #11B4E4;
+  stroke-width: 3;
+  stroke-dashoffset: 25;
+}
+
+.skill-donut-label {
+  font-size: 0.25em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-anchor: middle;
+  -moz-transform: translateY(0.5em);
+  -ms-transform: translateY(0.5em);
+  -webkit-transform: translateY(0.5em);
+  transform: translateY(0.5em);
 }
 
 /*

@@ -35,6 +35,10 @@
     font-size: 1.8em;
     text-align: left;
   }
+
+  .skill {
+    width: calc(33.33% - 2em);
+  }
 }
 
 @media screen and (min-width: 650px) {
@@ -56,6 +60,14 @@
   .project-card {
     margin: 1em 2em;
     width: calc(50% - 4em);
+  }
+
+  .skill {
+    width: calc(25% - 2em);
+  }
+
+  .section-title::after {
+    width: 195px;
   }
 }
 
@@ -79,10 +91,14 @@
     margin: 1em 2em;
     width: calc(33.33% - 4em);
   }
+
+  .skill {
+    width: calc(16.66% - 2em);
+  }
 }
 
 @media screen and (min-width: 1400px) {
-  header, .projects {
+  header, .projects, .skills {
     margin-left: auto;
     margin-right: auto;
     width: 1400px;
