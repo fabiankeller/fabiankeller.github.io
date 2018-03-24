@@ -1,0 +1,85 @@
+@media screen and (min-width: 550px) {
+  body {
+    font-size: 16px;
+  }
+
+  header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .header-picture {
+    margin: 1em 1.5em;
+    width: calc(25% - 3em);
+    text-align: left;
+  }
+
+  .header-picture > img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .header-titles {
+    margin: 1.5em;
+    width: calc(75% - 3em);
+  }
+
+  .header-title, .header-subtitle, .social-media {
+    width: 100%;
+    text-align: right;
+  }
+
+  .section-title > h2 {
+    font-size: 1.8em;
+  }
+
+  .skill {
+    width: 33.33%;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .project-card {
+    width: calc(50% - 4em);
+  }
+
+  .skill > svg {
+    width: 180px;
+    height: 180px;
+  }
+
+  .skill-donut-ring, .skill-donut-segment {
+    stroke-width: 2;
+  }
+
+  .section-title::after {
+    width: 195px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .banner-background {
+    background-position: 50% 75%;
+    height: 400px;
+  }
+
+  .banner-intro {
+    top: 20%;
+  }
+
+  .project-card {
+    width: calc(33.33% - 4em);
+  }
+
+  .skill {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  header, .projects, .skills {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1400px;
+  }
+}
