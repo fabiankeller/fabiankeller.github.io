@@ -173,6 +173,10 @@ h3 {
   margin: 2em 2em;
 }
 
+.project-card:hover > a > img, .project-card:hover > a > h3, .project-card:hover > a > p {
+  opacity: 0.8;
+}
+
 .project-card > a {
   text-decoration: none;
   color: #2d3c49;
